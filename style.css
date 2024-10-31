@@ -76,7 +76,7 @@ header .header-icons .icon {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 98vh ;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(8px); 
     display: flex;
@@ -143,7 +143,7 @@ header .header-icons .icon {
 
 .social-icons a {
     color: var(--primary-blue);
-    font-size: 2rem; 
+    font-size: 1.5rem; 
 }
 
 /* Responsive adjustment */
