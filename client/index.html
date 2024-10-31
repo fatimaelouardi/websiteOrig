@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="variables.css">
+    <script src="script.js" defer ></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- liens boxicons  -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<!-- or -->
+<link rel="stylesheet"
+href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <!-- Header starts -->
+<header>
+
+    
+    <span class="icon burger-icon" onclick="toggleMenu()"><i class='bx bx-menu-alt-left'></i></span>
+
+    <a href="#" aria-label="Homepage" class="logo">
+        <img src="img/whiteLogo.svg" alt="Company Logo">
+    </a>  
+
+    <nav aria-label="Main Navigation" class="navbar">
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#perso">Design Unique</a></li>
+            <li><a href="#produits">Découvrez</a></li>
+            <li><a href="#contact">À Votre Écoute</a></li>
+        </ul>
+    </nav>
+
+    <ul class="header-icons">
+        <li><a href=""><ion-icon name="search-outline" class="icon icon-search"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="person-outline" class="icon icon-user"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="bag-handle-outline" class="icon icon-cart"></ion-icon></a></li>
+    </ul>
+</header>
+<!-- Header end -->
+
+<!-- Sidebar Menu Starts -->
+<aside id="sidebar-menu" class="sidebar">
+    <span class="icon close-icon" onclick="toggleMenu()"><i class='bx bx-x'></i></span>
+    
+    <nav class="sidebar-nav" >
+        <ul id="sidebar-links" >
+            <!-- Les liens de navigation seront ajoutés ici via JavaScript -->
+        </ul>
+    </nav>
+
+    <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="bx bxl-pinterest"></i></a>
+        <a href="#" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
+    </div>
+</aside>
+<!-- Sidebar Menu Ends -->
+
+
+</body>
+</html>

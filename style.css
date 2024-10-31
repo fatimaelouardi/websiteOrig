@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+/* header starts */
+
+.burger-icon {
+    display: none;
+}
+
+header {
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    padding: 0 1vw;
+}
+
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+header a, .icon {
+    color: var(--white);
+}
+
+header .header-icons {
+    display: flex;
+    align-items: center;
+    gap: .5vw;  
+}
+
+
+header .navbar a {
+    font-family: var(--montserrat);
+    font-weight: var(--bold);
+    font-size: 1rem;
+    transition: all .5s;
+    
+}
+
+header .navbar a:hover {
+        color: var(--primary-blue);
+}
+
+header .header-icons .icon {
+    font-size: 1.5rem;
+}
+/* header ends  */
+
+
+
+
+
+
+
+
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+/* Sidebar active state */
+.sidebar.active {
+    transform: translateX(0);
+}
+
+/* Close icon styling */
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* Sidebar navigation */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 2rem 0; 
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    text-align: center; 
+}
+
+.sidebar-nav li {
+    margin: 15px 0; 
+}
+
+.sidebar-nav a {
+    color: var(--white); 
+    font-family: var(--montserrat);
+    font-weight: var(--bold);
+    font-size: 1.5rem; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+.sidebar-nav a:hover {
+    color: var(--primary-blue); 
+}
+
+/* Social media icons */
+.social-icons {
+    position: absolute;
+    bottom: 30px; 
+    display: flex;
+    gap: 20px; 
+}
+
+.social-icons a {
+    color: var(--primary-blue);
+    font-size: 2rem; 
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 1120px) {
+    nav {
+        display: none; /* Hide nav in mobile */
+    }
+
+    .burger-icon {
+        display: block; 
+        font-size: 2rem;
+        color: var(--white);
+    }
+}
